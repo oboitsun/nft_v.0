@@ -24,7 +24,7 @@ export default class HowTo extends Component {
             </g>
           </svg>
         </div>
-        <div className='max-w-1380 w-full flex flex-col items-center xl:flex-row xl:justify-between'>
+        <div className='max-w-1380 w-full flex flex-col items-center 2xl:flex-row xl:justify-between'>
           <div className='flex flex-col   text-xl sm:text-3xl md:text-4xl lg:text-5xl text-left tracking-tighter'>
             <h3 className=' text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-extrabold text-turq uppercase leading-tight '>
               how to get started

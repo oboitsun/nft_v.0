@@ -11,6 +11,12 @@ module.exports = {
       },
       fontSize: {
         180: '180px',
+        150: '150px',
+        90: '90px',
+      },
+      lineHeight: {
+        '90%': '90%',
+        150: '150px',
         90: '90px',
       },
       fontFamily: {

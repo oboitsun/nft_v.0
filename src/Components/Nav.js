@@ -17,7 +17,7 @@ export default class Nav extends Component {
             </button>
             <div className='flex flex-col h-20 justify-around flex-shrink pl-2 pr-2 md:pr-10   break-normal'>
               <button className='h-9 bg-btnred rounded px-2'>
-                <span className='w-full text-xs sm:text-sm md:text-sm lg:text-sm xl:text-lg  px-2 md:px-5 lg:px-10 leading-none uppercase'>
+                <span className='w-full text-xs sm:text-sm md:text-sm lg:text-sm xl:text-lg  px-2 md:px-5 lg:px-5 leading-none uppercase'>
                   sign up
                 </span>
               </button>

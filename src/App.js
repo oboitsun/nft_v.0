@@ -1,10 +1,13 @@
 import './App.css'
 import Main from './Components/Main'
+import { AnimatePresence } from 'framer-motion'
 function App() {
   return (
-    <div className='App'>
-      <Main />
-    </div>
+    <AnimatePresence exitBeforeEnter>
+      <div className='App'>
+        <Main />
+      </div>
+    </AnimatePresence>
   )
 }
 
