@@ -19,7 +19,7 @@ export default function WhatIsOrigins() {
     hidden: { opacity: 0, x: '90%' },
   }
   return (
-    <section className='flex justify-center  items-center text-white font-mont pb-10 md:pb-16 lg:pb-24  xl:pb-36 2xl:pb-44 md:px-5 lg:px-10 xl:px-36'>
+    <section className='flex justify-center  items-center text-white font-mont pb-10 md:pb-16 lg:pb-24  xl:pb-36 2xl:pb-44 md:px-5 lg:px-10 xl:px-36 w-full overflow-hidden'>
       <motion.div
         key={2}
         ref={ref}

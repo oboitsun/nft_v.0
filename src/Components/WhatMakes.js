@@ -1,20 +1,7 @@
-import React, { Component } from 'react'
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
-import { motion, useAnimation } from 'framer-motion'
-export default function WhatMakes() {
-  const controls = useAnimation()
-  const [ref, inView] = useInView()
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible')
-    }
-  }, [controls, inView])
-  const move = {
-    visible: { x: 0, opacity: 1 },
-    hidden: { opacity: 0 },
-  }
+import React from 'react'
 
+import { motion } from 'framer-motion'
+export default function WhatMakes() {
   return (
     <section className='font-mont relative text-white flex items-center justify-center pb-12 md:pb-24  xl:pb-48 2xl:pb-60 md:pr-5 lg:pr-10'>
       <div className='absolute opacity-50 xl:opacity-100 xl:static flex h-60 ml-auto lg:mr-20 z-0'>
