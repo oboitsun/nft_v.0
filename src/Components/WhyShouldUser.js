@@ -65,7 +65,7 @@ export default function WhyShouldUser() {
           className='sm:opacity-50 absolute lg:bottom-10%  lg:right-40 w-1/2  lg:w-5/12 z-0 '>
           <svg className='w-full' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 717.38 717.38'>
             <defs>
-              <style>{`.cls-why{fill:none;stroke:#36367f;stroke-miterlimit:10;stroke-width:3px;}`}</style>
+              <style>{`.cls-why{fill:none;stroke:#9696ff;stroke-miterlimit:10;stroke-width:6px;}`}</style>
             </defs>
             <g id='Layer_2' data-name='Layer 2'>
               <g id='Layer_2-2' data-name='Layer 2'>

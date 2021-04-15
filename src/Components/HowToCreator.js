@@ -44,7 +44,7 @@ export default function HowToCreator() {
     },
   }
   return (
-    <section className='font-mont relative text-white flex justify-end px-2 lg:px-10 lg:mr-10 py-5 lg:py-10 2xl:pt-24 2xl:pb-20 overflow-hidden'>
+    <section className='font-mont relative text-white flex justify-end px-2 lg:px-20 2xl:px-10 lg:mr-10 py-5 lg:py-10 2xl:pt-24 2xl:pb-20 overflow-hidden'>
       <div className='absolute top-1/2 transform lg:transform-none -translate-y-1/2 left-1/2 -translate-x-1/2 lg:top-15% 2xl:top-0 lg:left-10% md:w-1/4 lg:w-1/3 '>
         <motion.svg
           variants={svg}
@@ -74,7 +74,7 @@ export default function HowToCreator() {
           initial='hidden'
           ref={ref}
           animate={controls}
-          className='flex flex-col   text-xl sm:text-3xl md:text-4xl lg:text-5xl text-left tracking-tighter'>
+          className='flex flex-col    text-xl sm:text-3xl md:text-4xl lg:text-5xl text-left tracking-tighter'>
           <motion.h3
             custom
             key={1}

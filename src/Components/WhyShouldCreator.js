@@ -65,7 +65,7 @@ export default function WhyShouldCreator() {
           className='sm:opacity-50 absolute top-0  right-0  w-1/3 z-0 '>
           <svg className='w-full' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 508.72 508.68'>
             <defs>
-              <style>{`.cls-b1{fill:none;stroke-width:1.47px;}.cls-b1,.cls-b2{stroke:#36367f;stroke-miterlimit:10;}.cls-b2,.cls-b3{fill:#36367f;}.cls-b2{stroke-width:0.8px;}`}</style>
+              <style>{`.cls-b1{fill:none;stroke-width:1.47px;}.cls-b1,.cls-b2{stroke:#9696ff;stroke-miterlimit:10;}.cls-b2,.cls-b3{fill:#9696ff;}.cls-b2{stroke-width:0.8px;}`}</style>
             </defs>
             <g id='Layer_2' data-name='Layer 2'>
               <g id='Layer_2-2' data-name='Layer 2'>

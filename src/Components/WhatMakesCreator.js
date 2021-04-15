@@ -123,7 +123,7 @@ export default function WhatMakesCreator() {
           <br className='hidden 2xl:flex' />
           or branding and your content gets lost in a sea of
           <br className='hidden 2xl:flex' />
-          {` `}homogeneousness - <span className='font-bold'> were here to change all that.</span>
+          {` `}homogeneousness - <span className='font-bold'> were here to change all that .</span>
           <br className='hidden 2xl:flex' />
           <span className='text-gold'> Uniqueness</span> is what gives NFT values
           <br className='hidden 2xl:flex' />
