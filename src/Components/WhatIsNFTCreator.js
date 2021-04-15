@@ -32,7 +32,7 @@ export default function WhatIsNFTCreator() {
     },
   }
   return (
-    <section className='font-mont text-white relative py-20 pb-44 '>
+    <section className='font-mont text-white relative py-20 xl:pb-44 '>
       <div className='absolute opacity-30 lg:opacity-60 2xl:opacity-100   md:w-40 md:h-40  2xl:w-52 2xl:h-52  lg:top-10% 2xl:top-0  lg:left-10% z-0'>
         <motion.svg
           animate={controls}

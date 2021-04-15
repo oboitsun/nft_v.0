@@ -45,12 +45,12 @@ export default function HowToUser() {
   }
   return (
     <section className='font-mont relative text-white flex justify-end lg:mr-10 py-5 lg:py-10 2xl:pt-24 2xl:pb-20 overflow-hidden'>
-      <div className='absolute top-1/2 transform lg:transform-none -translate-y-1/2 left-1/2 -translate-x-1/2 lg:top-15% 2xl:top-0 lg:left-10% md:w-1/4 lg:w-1/3 '>
+      <div className='absolute  top-1/2 transform lg:transform-none -translate-y-1/2 left-1/2 -translate-x-1/2 lg:top-15% 2xl:top-0 lg:left-10% md:w-1/4 lg:w-1/3 '>
         <motion.svg
           variants={svg}
           initial='hidden'
           animate={controls}
-          className='md:w-full lg:w-2/3'
+          className='w-3/4 md:w-full lg:w-2/3'
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 391.9 505.07'>
           <defs>

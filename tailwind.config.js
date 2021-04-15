@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      spacing: {
+        '90vh': '90vh',
+      },
       borderWidth: {
         30: '30px',
       },

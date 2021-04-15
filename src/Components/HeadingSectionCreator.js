@@ -12,13 +12,13 @@ export default class HeadingSectionCreator extends Component {
       show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     }
     return (
-      <section className='max-h-screen py-10 lg:py-14 lg:pt-12 xl:pt-14 2xl:pt-36 lg:pb-36 text-white flex flex-col justify-between  items-center'>
+      <section className='xl:h-90vh py-10 lg:py-14 lg:pt-12 xl:pt-24 2xl:pt-36  text-white flex flex-col lg:justify-center xl:justify-start items-center'>
         <motion.h1
           variants={container}
           initial='hide'
           animate='show'
           style={{ lineHeight: '85%' }}
-          className='flex flex-col items-start  text-4xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-150 2xl:text-180 tracking-tight font-semibold'>
+          className='flex flex-col items-start  text-4xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-9xl 2xl:text-150 tracking-tight font-semibold'>
           <motion.span
             variants={item}
             className='text-gold font-extrabold text-left md:text-center tracking-wide '>

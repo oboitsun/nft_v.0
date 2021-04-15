@@ -32,7 +32,7 @@ export default function WhyShouldCreator() {
     },
   }
   return (
-    <section className='font-mont relative text-white flex justify-start pb-10 md:pb-16 lg:pb-24  xl:pb-36 2xl:pb-44 md:px-16 lg:px-24  w-full overflow-hidden'>
+    <section className='font-mont relative text-white flex justify-start px-2 pb-10 md:pb-16 lg:pb-24  xl:pb-36 2xl:pb-44 md:px-16 lg:px-24  w-full overflow-hidden'>
       <motion.div
         ref={ref}
         animate={controls}

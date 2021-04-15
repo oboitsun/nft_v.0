@@ -44,13 +44,13 @@ export default function HowToCreator() {
     },
   }
   return (
-    <section className='font-mont relative text-white flex justify-end px-10 lg:mr-10 py-5 lg:py-10 2xl:pt-24 2xl:pb-20 overflow-hidden'>
+    <section className='font-mont relative text-white flex justify-end px-2 lg:px-10 lg:mr-10 py-5 lg:py-10 2xl:pt-24 2xl:pb-20 overflow-hidden'>
       <div className='absolute top-1/2 transform lg:transform-none -translate-y-1/2 left-1/2 -translate-x-1/2 lg:top-15% 2xl:top-0 lg:left-10% md:w-1/4 lg:w-1/3 '>
         <motion.svg
           variants={svg}
           initial='hidden'
           animate={controls}
-          className='md:w-full lg:w-2/3'
+          className='w-5/6 md:w-full lg:w-2/3'
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 391.9 505.07'>
           <defs>
@@ -68,7 +68,7 @@ export default function HowToCreator() {
           </g>
         </motion.svg>
       </div>
-      <div className='max-w-1380  flex flex-col items-center 2xl:flex-row xl:justify-between'>
+      <div className='max-w-1380  flex flex-col items-center 2xl:flex-row xl:justify-around'>
         <motion.div
           variants={container}
           initial='hidden'
@@ -92,12 +92,12 @@ export default function HowToCreator() {
             and you’ll be on your way!
           </motion.p>
           <motion.p custom key={3} variants={item} className='tracking-tighter '>
-            <span>We will contact you for your onboarding so be ready,</span>
-            <br className='hidden 2xl:flex' />
+            <span>We will contact you for your onboarding so be ready,{` `}</span>
+
             <span> your followers are waiting!</span>
           </motion.p>
         </motion.div>
-        <div className='px-10 flex  flex-shrink justify-center items-center mt-5'>
+        <div className='flex  flex-grow 2xl:w-1/3 items-center mt-5'>
           <SignUp />
         </div>
       </div>
