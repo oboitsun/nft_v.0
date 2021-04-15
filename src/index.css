@@ -3,15 +3,4 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
 body {
-  background: rgb(50, 126, 202);
-  background: linear-gradient(
-    180deg,
-    rgba(50, 126, 202, 1) 0%,
-    rgba(8, 19, 35, 1) 35%,
-    rgba(21, 62, 102, 1) 70%,
-    rgba(33, 102, 163, 1) 77%,
-    rgba(8, 19, 35, 1) 100%
-  );
-  min-height: 100vh;
-  height: fit-content;
 }

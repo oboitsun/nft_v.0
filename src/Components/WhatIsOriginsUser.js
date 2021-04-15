@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
-export default function WhatIsOrigins() {
+export default function WhatIsOriginsUser() {
   const controls = useAnimation()
   const [ref, inView] = useInView()
   useEffect(() => {

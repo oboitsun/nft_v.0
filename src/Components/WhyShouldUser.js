@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
-export default function WhyShould() {
+export default function WhyShouldUser() {
   const controls = useAnimation()
   const [ref, inView] = useInView()
   useEffect(() => {

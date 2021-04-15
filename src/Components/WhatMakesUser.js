@@ -1,9 +1,38 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
+import { motion, useAnimation } from 'framer-motion'
 
-import { motion } from 'framer-motion'
-export default function WhatMakes() {
+export default function WhatMakesUser() {
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: 0.2,
+        delayChildren: 0.3,
+        staggerChildren: 0.3,
+      },
+    },
+  }
+
+  const item = {
+    hidden: { y: '-100%', opacity: 0 },
+    visible: {
+      transition: { duration: 0.3 },
+      y: 0,
+      opacity: 1,
+    },
+  }
   return (
-    <section className='font-mont relative text-white flex items-center justify-center pb-12 md:pb-24  xl:pb-48 2xl:pb-60 md:pr-5 lg:pr-10'>
+    <section className='font-mont relative text-white flex items-center justify-center pb-12 md:pb-24  xl:pb-48 2xl:pb-60 md:pr-5 lg:pr-10 overflow-hidden'>
       <div className='absolute opacity-50 xl:opacity-100 xl:static flex h-60 ml-auto lg:mr-20 z-0'>
         <svg className='h-60 ' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 175.78 240.78'>
           <defs>
@@ -57,11 +86,22 @@ export default function WhatMakes() {
           </g>
         </svg>
       </div>
-      <div className='z-1 px-2  md:px-10 lg:px-0  flex flex-col items-start max-w-1380'>
-        <h3 className='uppercase text-gold font-extrabold text-2xl md:text-5xl lg:text-7xl pb-5 lg:pb-10 text-left'>
+      <motion.div
+        variants={container}
+        initial='hidden'
+        ref={ref}
+        animate={controls}
+        className='z-1 px-2  md:px-10 lg:px-0  flex flex-col items-start max-w-1380'>
+        <motion.h3
+          key={1}
+          variants={item}
+          className='uppercase text-gold font-extrabold text-2xl md:text-5xl lg:text-7xl pb-5 lg:pb-10 text-left'>
           WHAT MAKES ORIGINS DIFFERENT?
-        </h3>
-        <p className='text-left text-xl md:text-3xl lg:text-5xl leading-tight pb-5 lg:pb-10 z-1 tracking-tighter'>
+        </motion.h3>
+        <motion.p
+          key={2}
+          variants={item}
+          className='text-left text-xl md:text-3xl lg:text-5xl leading-tight pb-5 lg:pb-10 z-1 tracking-tighter'>
           {`Our goal is to create a social marketplace where`}
           <br className='hidden xl:flex' />
           {` you can interact with your friends and`}
@@ -69,8 +109,11 @@ export default function WhatMakes() {
           {` the content creators alike and purchase collectibles`}
           <br className='hidden xl:flex' />
           {` that will last a lifetime.`}
-        </p>
-        <p className='text-left text-xl md:text-3xl lg:text-5xl leading-tight pb-4 z-1'>
+        </motion.p>
+        <motion.p
+          key={3}
+          variants={item}
+          className='text-left text-xl md:text-3xl lg:text-5xl leading-tight pb-4 z-1'>
           {` Our platform will allow you to follow`}
           <br className='hidden xl:flex' />
           {` the latest trends in the NFT space`}
@@ -78,8 +121,8 @@ export default function WhatMakes() {
           {` and bid on items from some of the biggest`}
           <br className='hidden xl:flex' />
           {` names in digital collectibles.`}
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
     </section>
   )
 }
